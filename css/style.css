@@ -4,10 +4,10 @@
 =========================================== */
 
 :root {
-  --black: #1a1a1a;         /* soft black */
-  --gold: #e6c76d;          /* light gold */
-  --cream: #fdfdf9;         /* cream-white text */
-  --grey: #f4f4f4;          /* light background */
+  --black: #1a1a1a;         
+  --gold: #e6c76d;          
+  --cream: #fdfdf9;         
+  --grey: #f4f4f4;          
   --muted: #777;
 
   --radius: 14px;
@@ -165,19 +165,34 @@ img { max-width: 100%; display: block; border-radius: var(--radius); }
 /* ==============================
    Founder Photo
 ============================== */
+.founder-block {
+  text-align: center;
+}
+
 .founder-photo {
-  max-width: 100%;
-  border-radius: 18px; /* more rounded for elegance */
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25); /* deeper shadow */
-  border: 4px solid var(--gold); /* premium gold border */
-  padding: 6px; /* breathing space inside border */
-  background: var(--cream); /* subtle background frame */
+  max-width: 70%; /* reduced size for balance */
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  border: 3px solid var(--gold);
+  padding: 5px;
+  background: var(--cream);
   transition: transform var(--transition), box-shadow var(--transition);
+  margin: 0 auto;
 }
 
 .founder-photo:hover {
-  transform: scale(1.03); /* gentle zoom */
-  box-shadow: 0 16px 36px rgba(0,0,0,0.3);
+  transform: scale(1.02);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.3);
+}
+
+.founder-caption {
+  margin-top: 12px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 /* ==============================
