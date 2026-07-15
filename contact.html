@@ -24,7 +24,7 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Let’s Build Together</h1>
-      <p>We would be honored to hear from you.</p>
+      <p>We would be honored to hear from you. Every great partnership begins with a conversation.</p>
     </div>
   </section>
 
@@ -33,32 +33,75 @@
     <div class="container two-column">
       <!-- Contact Info -->
       <div>
-        <h2 class="section-title">Contact Information</h2>
+        <h2 class="section-title">Reach Out to Us</h2>
+        <p>
+          Whether you’re an entrepreneur seeking guidance, a ministry leader pursuing sustainability, or an investor desiring impact, 
+          we are here to listen, advise, and walk with you. Contact us today and let’s explore how we can build Kingdom‑centered enterprises together.
+        </p>
         <p><strong>Phone:</strong> [Your Phone]</p>
         <p><strong>Email:</strong> [your@email.com]</p>
         <p><strong>Office:</strong> [Your Address]</p>
         <p><strong>Business Hours:</strong> Monday–Friday, 8:00 AM–5:00 PM</p>
 
-        <h3>Social Media</h3>
-        <p>LinkedIn • Facebook • Instagram (placeholders)</p>
+        <h3>Connect With Us</h3>
+        <p>Follow us on LinkedIn • Facebook • Instagram (placeholders)</p>
       </div>
 
       <!-- Contact Form -->
       <div>
         <h2 class="section-title">Send Us a Message</h2>
-        <form>
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
-          <input type="text" placeholder="Subject">
-          <textarea placeholder="Your Message" required></textarea>
+        <p>
+          We value meaningful conversations. Share your thoughts, questions, or ideas below — our team will respond promptly and personally.
+        </p>
+        <form action="https://formspree.io/f/mojgvzva" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+
+          <!-- Hidden fields for subject line and redirect -->
+          <input type="hidden" name="_subject" value="New Contact Form Submission from King Makers">
+          <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+
           <button class="btn btn-gold" type="submit">Send Message</button>
         </form>
       </div>
     </div>
   </section>
 
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Let’s Begin the Journey</h2>
+      <p>
+        Every vision deserves the right support. Reach out today and discover how The King Makers Consultancy Firm can help you 
+        transform ideas into enterprises that honor God and impact generations.
+      </p>
+      <a href="form.html" class="btn btn-gold">Fill Out Our Form</a>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>About</h3>
+        <p>The King Makers Consultancy Firm empowers entrepreneurs, investors, and ministries to thrive through biblical principles and professional excellence.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="form.html">Form</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: [your@email.com]</p>
+        <p>Phone: [Your Phone]</p>
+      </div>
+    </div>
     <div class="copyright">© 2026 The King Makers Consultancy Firm</div>
   </footer>
 
