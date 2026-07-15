@@ -266,3 +266,33 @@ footer a:hover { color: var(--gold); }
 
 #backToTop.show { opacity: 1; visibility: visible; }
 #backToTop:hover { transform: translateY(-5px); }
+
+/* ==============================
+   Thank You Page Styling
+============================== */
+.thankyou-section {
+  padding: 120px 20px;
+  text-align: center;
+  background: var(--cream);
+}
+
+.thankyou-section h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.thankyou-section p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: var(--black);
+}
+
+.thankyou-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
