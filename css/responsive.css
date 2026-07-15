@@ -1,0 +1,89 @@
+/* ===========================================
+   The King Makers Consultancy Firm - responsive.css
+   Refined for elegance and mobile-first luxury
+=========================================== */
+
+/* Tablets & Medium Screens */
+@media (max-width: 992px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3,
+  .two-column,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .two-column {
+    gap: 40px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
