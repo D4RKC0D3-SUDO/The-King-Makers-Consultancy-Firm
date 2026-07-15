@@ -22,7 +22,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: var(--grey);
   color: var(--black);
-  line-height: 1.8; /* more breathing room */
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -30,14 +30,14 @@ h1, h2, h3 {
   font-family: "Cormorant Garamond", serif;
   color: var(--black);
   font-weight: 600;
-  margin-bottom: 18px; /* extra spacing below headings */
+  margin-bottom: 20px;
 }
 
 a { text-decoration: none; transition: color var(--transition); }
 img { max-width: 100%; display: block; border-radius: var(--radius); }
 
 .container { width: min(1140px, 92%); margin: auto; }
-.section { padding: 100px 0; } /* more vertical spacing */
+.section { padding: 110px 0; } /* more vertical spacing */
 .light { background: var(--cream); }
 .center { text-align: center; }
 
@@ -47,15 +47,33 @@ img { max-width: 100%; display: block; border-radius: var(--radius); }
 .navbar {
   position: fixed; top: 0; left: 0; width: 100%;
   display: flex; justify-content: space-between; align-items: center;
-  padding: 20px 5%;
+  padding: 18px 5%;
   background: rgba(26,26,26,0.92);
   backdrop-filter: blur(10px);
   z-index: 999;
   transition: background var(--transition), box-shadow var(--transition);
 }
 
-.logo h2 { color: var(--gold); font-weight: 700; letter-spacing: 1px; }
-.nav-links { display: flex; gap: 32px; list-style: none; }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between logo image and text */
+}
+
+.logo img {
+  height: 52px; /* refined size for balance */
+  width: auto;
+  display: block;
+}
+
+.logo h2 {
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+
+.nav-links { display: flex; gap: 34px; list-style: none; }
 .nav-links a { color: var(--cream); font-weight: 500; }
 .nav-links a:hover, .nav-links .active { color: var(--gold); }
 .menu-btn { display: none; color: var(--cream); font-size: 1.6rem; cursor: pointer; }
@@ -69,35 +87,35 @@ img { max-width: 100%; display: block; border-radius: var(--radius); }
     url('../images/hero.jpg') center/cover no-repeat;
   display: grid; place-items: center;
   text-align: center; color: var(--cream);
-  padding: 140px 20px;
+  padding: 150px 20px;
 }
 
 .hero h1 {
-  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
   max-width: 900px; margin: auto;
 }
 
 .hero p {
-  max-width: 760px; margin: 30px auto;
+  max-width: 760px; margin: 35px auto;
   font-size: 1.05rem; color: #f0f0e6;
 }
 
 .hero-buttons {
-  display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
-  margin-top: 36px; /* more space above buttons */
+  display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 /* ==============================
    Buttons
 ============================== */
 .btn {
-  padding: 10px 22px; /* reduced size */
+  padding: 9px 20px; /* reduced size */
   border-radius: 999px;
   font-weight: 600;
   transition: var(--transition);
-  letter-spacing: 0.8px; /* more space between letters */
-  margin: 10px; /* more space around buttons */
-  font-size: 0.9rem; /* slightly smaller text */
+  letter-spacing: 1px; /* more space between letters */
+  margin: 12px; /* more space around buttons */
+  font-size: 0.88rem; /* slightly smaller text */
 }
 
 .btn-gold {
@@ -123,38 +141,38 @@ img { max-width: 100%; display: block; border-radius: var(--radius); }
 /* ==============================
    Layout Grids
 ============================== */
-.two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
-.section-title { text-align: center; margin-bottom: 50px; font-size: 2.3rem; color: var(--black); }
+.two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 35px; }
+.section-title { text-align: center; margin-bottom: 55px; font-size: 2.2rem; color: var(--black); }
 
 /* ==============================
    Cards
 ============================== */
 .card, .service-card {
   background: var(--cream);
-  padding: 35px;
+  padding: 38px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: var(--transition);
   text-align: center;
-  margin: 12px; /* spacing between cards */
+  margin: 14px;
 }
 
 .card:hover, .service-card:hover { transform: translateY(-8px); }
-.card i, .service-card i { font-size: 2rem; color: var(--gold); margin-bottom: 20px; }
+.card i, .service-card i { font-size: 2rem; color: var(--gold); margin-bottom: 22px; }
 
 /* ==============================
    Call To Action
 ============================== */
 .cta {
-  padding: 100px 0;
+  padding: 110px 0;
   background: var(--black);
   color: var(--cream);
   text-align: center;
 }
 
-.cta h2 { margin-bottom: 20px; color: var(--gold); }
+.cta h2 { margin-bottom: 22px; color: var(--gold); }
 
 /* ==============================
    Footer
@@ -162,18 +180,18 @@ img { max-width: 100%; display: block; border-radius: var(--radius); }
 footer {
   background: #111;
   color: var(--cream);
-  padding: 70px 5% 30px;
+  padding: 80px 5% 35px;
 }
 
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; }
-footer h3 { color: var(--gold); margin-bottom: 20px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 55px; }
+footer h3 { color: var(--gold); margin-bottom: 22px; }
 footer ul { list-style: none; }
 footer a { color: var(--cream); transition: color var(--transition); }
 footer a:hover { color: var(--gold); }
 .copyright {
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.1);
-  margin-top: 40px; padding-top: 25px;
+  margin-top: 45px; padding-top: 28px;
   font-size: 0.9rem;
 }
 
@@ -184,7 +202,7 @@ footer a:hover { color: var(--gold); }
   display: flex; flex-direction: column;
   position: absolute; top: 80px; right: 30px;
   width: 240px; background: var(--black);
-  padding: 24px; border-radius: 12px;
+  padding: 26px; border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
@@ -204,10 +222,10 @@ footer a:hover { color: var(--gold); }
 ============================== */
 #backToTop {
   position: fixed; right: 25px; bottom: 25px;
-  width: 42px; height: 42px; /* smaller */
+  width: 40px; height: 40px; /* smaller */
   border: none; border-radius: 50%;
   background: var(--gold); color: var(--black);
-  font-size: 16px; cursor: pointer;
+  font-size: 15px; cursor: pointer;
   opacity: 0; visibility: hidden;
   transition: var(--transition); z-index: 999;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
